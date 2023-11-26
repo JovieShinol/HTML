@@ -3,45 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORM</title>
 </head>
 <body>
-    <table border="2px" cellspacing="1px" cellpadding="10px">
-        <caption>MY TIMETABLE</caption>
-        <tr>
-            <td colspan="4">timetable</td>
-        </tr>
-        <tr>
-        <th>day</th>
-        <th>1</th>
-        <td rowspan="3">break</td>
-        <th>2</th>
-        </tr>
-        <tr>
-            <td>monday</td>
-            <td>tamil</td>
-            <td>eng</td>
-        </tr>
-        <tr>
-            <td>tuesday</td>
-            <td>eng</td>
-            <td>tamil</td>
-     </tr>
-    </table>
-<ul type="circle">
-    <li>comp</li>
-    <li>cpu</li>
-    <li>clock</li>
-</ul>
-<ol type="i">
-    <li>comp</li>
-    <li>comp</li>
-    <li>cpu</li>
-    <li>clock</li>
-</ol>
-<a href="https://www.myntra.com/">Mdfkgk</a>
-<iframe src="https://moviesda8.me/tamilrockers-movies-download/" height="500px" width="500px"></iframe>
+    <form action="#">
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+            <p>
+                <label for="fn">First Name:</label>
+                <input type="text" id="fn" required>
+            </p>
+            <p>
+                <label for="ln">Last Name:</label>
+                <input type="text" id="ln" required>
+            </p>
+            <p>
+                <label for="un">User Name:</label>
+                <input type="text" id="un" required>
+            </p>
+            <p>
+                <label for="password">password:</label>
+                <input type="password" id="password" required>
+            </p>
+            <p>
+                <label for="tp">Mobile No:</label>
+                <input type="tel" id="tp" pattern="[0-9]{5}[0-9]{5}" required>
+            </p>
+            <p>
+                <label>Date of Birth:</label>
+                <input type="date">
+            </p>
+            <p>
+                <label for="gen">Gender:</label>
+                <input type="radio" name="G" id="gen">Male
+                <input type="radio" name="G" id="gen">Female
+            </p>
+            <p>
+                <label for="skill">Skills:</label>
+                <select id="skill" multiple size="2">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+            </p>
+            <p>
+                <label for="f" >Upload Resume:</label>
+                <input type="file">
+            </p>
+            <p>
+                <label for="edu">Education:</label>
+                <select id="edu"name="Education" multiple >
+                    <optgroup label="SSLC">
+                        <option value="cbsc">CBSC</option>
+                        <option value="St">State Board</option>
+                    </optgroup>
+                    <optgroup label="Higher Studies">
+                        <option value="mb">Maths Biology</option>
+                        <option value="mc">Maths Computer</option>
+                        <option value="cm">Commerce</option>
+                    </optgroup>
+                    <optgroup label="UG">
+                        <option value="cbsc">BE</option>
+                        <option value="St">BTech</option>
+                        <option value="bsc">BSC</option>
+                        <option value="other">Others</option>
+                    </optgroup>
+                    <optgroup label="PG">
+                        <option value="me">ME</option>
+                        <option value="mt">MTech</option>
+                        <option value="mba">MBA</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="con">Your Confidence Level:</label>
+                <input type="range" min="0" max="10">
+            </p>
+            <p>
+                <label for="msg">Any Suggestions:</label><br><br>
+                <textarea id="msg" name="Any Suggestions" cols="30" rows="7" placeholder="Type Your Message Here"></textarea>
+            </p>
+            <p>
+                <input type="checkbox">I Agree to all the terms and conditions.
+            </p>
+            <p align="right">
+                <button>SUBMIT</button>
+            </p>
 
 
+        </fieldset>
+    </form>
 </body>
 </html>
